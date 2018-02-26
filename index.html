@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>simple crystal game</title>
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,600,700">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+</head>
+
+<body>
+
+    <div class="jumbotron">
+        <h1 class="text-center">SnowMan Game</h1>
+    </div>
+
+    <h1></h1>
+    
+    </h1>
+
+    <div class="coverAll"></div>
+
+    <div>You guessed:
+        <span id="guess"></span>
+    </div>
+
+
+
+    <div class="container">
+            <br>
+            <div class="card" id="tricks">
+                <p class="card-header" id="number-to-guess"></p>
+                <div class="image" id="trick-image"></div>
+            </div>
+        </div>
+       
+
+    <br>
+
+    <div id="win-lose"></div>
+
+    <div id="win-loss-tracker">
+
+        <div>
+            <h3>Wins: </h3>
+            <span id="wins"></span>
+        </div>
+
+        <div>
+            <h3>Losses: </h3>
+            <span id="losses"></span>
+        </div>
+
+        <footer class="footer" text-align="center">
+            <button id="clear">New Game</button>
+            Copyright © 2018 Koltyn C Palmer
+        </footer>
+
+        <!-- JAVASCRIPT  -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>
