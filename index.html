@@ -23,86 +23,78 @@
 
     <h1></h1>
 
-    </h1>
+    <div class="coverAll"></div>
 
     <div class="container">
 
-            <div class="row">
-                    <div class="col-lg-12">
-                        <br>
-                        <div class="card">
-                            <p class="card-header">pick a trick to flip</p>
-                            <div id="tricks"></div>
-                        </div>
-                    </div>
-            </div> <!-- end ROW -->
+        <div class="row">
+            <div class="col-lg-12">
+                <br>
+                <div class="card">
+                    <div class="card-header" id="score-to-beat"></div>
+                    <div id="tricks"></div>
+                </div>
+            </div>
+        </div>
+        <!-- end ROW -->
+
+        <div class="row">
+
+
 
             <div class="row">
-    
-                <div class="col-lg-6">
+
+                <div class="col-md-3">
                     <br>
                     <div class="card">
                         <p class="card-header">you guessed</p>
                         <div id="guess"></div>
                     </div>
                 </div>
-    
-    
-                <div class="col-lg-6">
+
+                <div class="col-md-3">
                     <br>
                     <div class="card">
-                        <p class="card-header">choose your next move</p>
-                        
+                        <p class="card-header">lives used</p>
+                        <div id="trick-tries"></div>
                     </div>
                 </div>
-    
-                <div class="col-lg-6">
+
+                <div class="col-md-3">
                     <br>
                     <div class="card">
-                            <p class="card-header">scoreboard</p>
-                        
-                            <div class="row">
-                                <div id="scoreboard" class="card">
-                                <span class="card-header">jumps survived</span>
-                                <span class="card-header">jumps crashed</span>
-                                <span class="card-header">lives left</span>
-                            </div>
-                        </div>
+                        <p class="card-header">sum of guesses</p>
+                        <div id="guessSum"></div>
                     </div>
                 </div>
-    
+
+                <div class="col-md-3">
+                    <br>
+                    <div class="card" id="win-lose"></div>
+                    <p class="card-header">Wins: </p>
+                    <div id="wins"></div>
+                    <div class="card">
+                        <p class="card-header">Losses: </p>
+                        <div id="losses"></div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
-<!-- ////////////////////////////////////////// -->
 
-    <div class="coverAll"></div>
 
-    <div class="div" id="number-to-guess"></div>
 
-    <div class="card" id="win-lose"></div>
 
-    <div class="card" id="win-loss-tracker">
+    <!--  FOOTER  -->
+    <footer class="footer" text-align="center">
+        <button id="clear">New Game</button>
+        Copyright © 2018 Koltyn C Palmer
+    </footer>
 
-        <div class="card">
-            <h3>Wins: </h3>
-            <span id="wins"></span>
-        </div>
-
-        <div class="card">
-            <h3>Losses: </h3>
-            <span id="losses"></span>
-        </div>
-
-        <!--  FOOTER  -->
-        <footer class="footer" text-align="center">
-            <button id="clear">New Game</button>
-            Copyright © 2018 Koltyn C Palmer
-        </footer>
-
-        <!--  JAVASCRIPT  -->
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <!--  JAVASCRIPT  -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 
 </body>
 
