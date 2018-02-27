@@ -6,11 +6,17 @@
 
 }
 
+#tricks {
+    display: inline;
+
+  }
+
 .container {
   border: 1px;
   border-color: slategray;
   border-radius: 4px;
   background-color: aliceblue;
+  max-width: 900px;
 }
 
 .coverAll {
@@ -28,6 +34,7 @@
     background-size: cover;
     color: white;
     border-radius: 0;
+    font-size: 34px;
 }
 
 .footer {
