@@ -1,41 +1,65 @@
+body {
+  font-family: "Josefin Sans";
+  background-color: aliceblue;
+  margin: auto;
+
+}
+
 .trick-image {
   width: 200px;
   height: 200px;
   margin: 5px;
   overflow: hidden;
+  border-radius: 5px;
+}
+
+#endImgs {
+  display: none;
 }
 
 #tricks {
-    display: inline;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
+  display: inline;
+  max-width: 860px;
   }
 
-.container {
+.card {
   border: 1px;
   border-color: slategray;
-  border-radius: 4px;
-  background-color: aliceblue;
-  max-width: 898px;
-  margin-top: 30px;
+  border-radius: 2px;
   padding: 15px;
+  width: auto;
+  max-width: 880px;
+  background-color: inherit;
+  position: relative;
 }
 
-.coverAll {
+.card-header {
+  color: azure;
+  background-color: rgb(97, 167, 214);
+}
+
+#overlayWin {
   z-index: 1000;
   position: fixed;
-  top: 0px;
-  left: 0px;
   background-size: cover;
+  background: url('../../assets/images/snow_jumbo.gif') no-repeat top center;
   display: none;
+  width: 100%;
+}
+
+#overlayLose {
+  z-index: 1000;
+  position: fixed;
+  background-size: cover;
+  background: url('../../assets/images/youwin.gif') no-repeat top center;
+  display: none;
+  width: 100%;
 }
 
 .jumbotron {
     margin: 0px auto;
-    background: url('../../assets/images/snow_jumbo.gif') no-repeat top center;
     background-size: cover;
+    background: url('../../assets/images/snow_jumbo.gif') no-repeat top center;
     color: white;
     border-radius: 0;
     font-size: 34px;
@@ -74,3 +98,26 @@ h1 {
     margin: 0.67em 0;
   }
 
+/*     MEDIA QUERY     */
+
+@media screen and (max-width: 980px) {
+  #card840widemax {
+      min-width: 870px;
+  };
+
+
+@media screen and (max-width: 768px) {
+};
+
+@media screen and (max-width: 640px) {
+  
+  #card840widemax {
+    min-width: 480px;
+  }
+
+  .card-header {
+    min-width: 420px;
+  }
+
+};
+}
