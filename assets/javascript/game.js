@@ -1,22 +1,19 @@
-var numberOptions = Math.floor(Math.random() * 12)+1;
+var numberOptions = Math.floor(Math.random() * 12) + 1;
 var targetNumber = Math.floor(Math.random() * 101) + 20;
 var trickCount = 0;
 var wins = 0;
 var losses = 0;
 var pointCounter = 0;
 var imgFiles = [
-  '<img class="trick-image" src="/Users/koltynpalmer/dev/class_dev/homework/week-4-game/assets/images/bowl.png">',
-  '<img class="trick-image" src="/Users/koltynpalmer/dev/class_dev/homework/week-4-game/assets/images/grab.png">',
-  '<img class="trick-image" src="/Users/koltynpalmer/dev/class_dev/homework/week-4-game/assets/images/ollie.png">',
-  '<img class="trick-image" src="/Users/koltynpalmer/dev/class_dev/homework/week-4-game/assets/images/butters.png">',
-  '<img class="trick-image" src="/Users/koltynpalmer/dev/class_dev/homework/week-4-game/assets/images/rail.png">',
-  '<img class="trick-image" src="/Users/koltynpalmer/dev/class_dev/homework/week-4-game/assets/images/handsflip.png">',
-  '<img class="trick-image" src="/Users/koltynpalmer/dev/class_dev/homework/week-4-game/assets/images/resort.jpg">',
-  '<img class="trick-image" src="/Users/koltynpalmer/dev/class_dev/homework/week-4-game/assets/images/cliffdrop.png">'
+  '<img class="trick-image" img src="assets/images/bowl.png">',
+  '<img class="trick-image" img src="assets/images/grab.png">',
+  '<img class="trick-image" img src="assets/images/ollie.png">',
+  '<img class="trick-image" img src="assets/images/butters.png">',
+  '<img class="trick-image" img src="assets/images/rail.png">',
+  '<img class="trick-image" img src="assets/images/handsflip.png">',
+  '<img class="trick-image" img src="assets/images/resort.jpg">',
+  '<img class="trick-image" img src="assets/images/cliffdrop.png">'
 ];
-
-
-
 
 // Instructinos
 $("#number-to-guess").text(
@@ -26,15 +23,14 @@ $("#number-to-guess").text(
 );
 
 for (var i = 0; i < 4; i++) {
-
-    var randomImage = imgFiles[Math.floor(Math.random() * imgFiles.length)];
-    //var imgURL = randomImage;
+  var randomImage = imgFiles[Math.floor(Math.random() * imgFiles.length)];
+  //var imgURL = randomImage;
 
   // Next we create a for loop to create a trick image for every numberOption.
   var imageTrick = $("<img>"); // For each iteration, we will create an imageTrick
   imageTrick.addClass("trick-image"); // First each trick will be given the class ".trick-image". This will allow the     CSS to take effect.
   // imageTrick.attr("src", imgFiles); // Each imageTrick will be given a src link to the trick image
-  
+
   $("#tricks").append(randomImage); // Lastly, each trick image (with all it classes and attributes) will get added to     the page.
   imageTrick.attr("data-trickvalue", numberOptions); // Each imageTrick will be given a data attribute called     data-trickvalue. This data attribute will be set equal to the array value.
   // This time, our click event applies to every single trick on the page. Not just one.
@@ -57,12 +53,12 @@ $(".trick-image").on("click", function() {
     wins++; //  Increment wins by one.
     $("#win-lose").html("<h2>Winner!</h2>"); //  Find the div with an id of win-lose. Update it with an h2 of "Winner!"
     $("#wins").html("<h3>" + wins + "</h3>"); //  Find the div with an id of wins. Update it with the value of the wins variable.
-    $(".coverAll").html("<img src='assets/images/backcountry.gif' />"); //  Find the div with an id of winImage. Update it with an h2 of "Winner!"
+    $(".coverAll").html("<img src='assets/images/backcountry.gif'>"); //  Find the div with an id of winImage. Update it with an h2 of "Winner!"
   } else if (pointCounter >= targetNumber) {
     alert("You lose!!");
     losses++; //  Increment losses by one.
     $("#win-lose").html("<h2>Wipe Out!</h2>"); //  Find the div with an id of win-lose. Update it with an h2 of "Wipe Out!"
     $("#losses").html("<h3>" + losses + "</h3>"); //  Find the div with an id of losses. Update it with the value of the losses variable.
-    $(".coverAll").show("<img src='assets/images/youlose.gif' />"); //  Find the div with an id of loseImage. Update it with an h2 of "Winner!"
+    $(".coverAll").show("<img src='assets/images/youlose.gif'>"); //  Find the div with an id of loseImage. Update it with an h2 of "Winner!"
   }
 });
