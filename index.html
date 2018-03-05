@@ -9,7 +9,6 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,400,600,700">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 </head>
 
 <body>
@@ -25,55 +24,27 @@
 
     <div class="coverAll"></div>
 
-    <div class="card" id="overlay">
+    <div class="container">
 
-        <div class="col-lg-12"></div>
-
-        <div class="row">
-
-            <br>
-            <div class="card" id="870widemax">
-                <div class="card-header" id="score-to-beat"></div>
-                <div id="tricks"></div>
-            </div>
+        <div id="scores">
+            <!-- TOTAL GOAL -->
+            <div class="score" id="number">Goal: </div>
+            <!-- TOTAL SCORE -->
+            <div class="score" id="guessSum">Total: </div>
+            <!-- TOTAL WINS -->
+            <div class="score" id="wins"> Wins: </div>
+            <!-- TOTAL LOSSES -->
+            <div class="score" id="losses">Losses: </div>
         </div>
 
-
-        <div class="row">
-
-            <br>
-            <div class="card" id="countingbox">
-                <div class="card-header" id="guess">you guessed</div>
-            </div>
-
-            <div class="card" id="countingbox">
-                <div class="card-header" id="trick-tries">lives used</div>
-            </div>
-
-            <div class="card" id="countingbox">
-                <div class="card-header" id="guessSum">guess count</div>
-            </div>
-
-            <div class="card" id="countingbox">
-                <div class="card-header" id="wins">Wins: </div>
-            </div>
-
-            <div class="card" id="countingbox">
-                    <div class="card-header" id="losses">Losses: </div>
-                </div>
-        </div>
-
+        <br>
+        <div id="tricks"></div>
 
     </div>
 
-
-
     <br>
     <br>
     <br>
-
-
-
 
     <!--  FOOTER  -->
     <footer class="footer" text-align="center">

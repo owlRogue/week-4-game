@@ -1,8 +1,17 @@
 body {
   font-family: "Josefin Sans";
   background-color: aliceblue;
-  margin: auto;
 
+}
+
+.coverAll {
+  background-size: cover;
+}
+
+.container {
+  margin: auto;
+  width: auto;
+  z-index: 1000;
 }
 
 .trick-image {
@@ -13,11 +22,7 @@ body {
   border-radius: 5px;
 }
 
-#endImgs {
-  display: none;
-}
-
-#tricks {
+#tricks, #scores {
   display: inline;
   max-width: 860px;
   }
@@ -27,37 +32,31 @@ body {
   border-color: slategray;
   border-radius: 2px;
   padding: 15px;
-  width: auto;
   max-width: 880px;
   background-color: inherit;
   position: relative;
+  display: inline;
 }
 
-.card-header {
+#number {
+  background-color: black;
+  color: white;
+}
+
+.score {
   color: azure;
   background-color: rgb(97, 167, 214);
-}
-
-#overlayWin {
-  z-index: 1000;
-  position: fixed;
-  background-size: cover;
-  background: url('../../assets/images/snow_jumbo.gif') no-repeat top center;
-  display: none;
-  width: 100%;
-}
-
-#overlayLose {
-  z-index: 1000;
-  position: fixed;
-  background-size: cover;
-  background: url('../../assets/images/youwin.gif') no-repeat top center;
-  display: none;
-  width: 100%;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+  padding-top: 30px;
+  padding-left: 20px;
+  border-radius: 5px;
+  display: inline-block;
 }
 
 .jumbotron {
-    margin: 0px auto;
+    margin: 0px;
     background-size: cover;
     background: url('../../assets/images/snow_jumbo.gif') no-repeat top center;
     color: white;
@@ -94,8 +93,7 @@ body {
 }
 
 h1 {
-    font-size: 2em;
-    margin: 0.67em 0;
+    font-size: 37;
   }
 
 /*     MEDIA QUERY     */
